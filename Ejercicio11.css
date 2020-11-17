@@ -1,0 +1,31 @@
+/*001*/
+body {
+    font-family: "Optima", sans-serif;
+    padding:1em;
+    font-size:1em;
+    background-color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+}
+/*001*/
+h1 {
+    color:rgb(15, 0, 70);
+    font-size: 4em;
+    text-transform: uppercase;
+}
+/*001*/
+h2 {
+    color:rgb(35, 11, 122);
+    font-size: 2em;
+    text-transform: uppercase;
+}
+/*001*/
+h3 {
+    color:rgb(50, 13, 187);
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+h4{
+    color:rgb(52, 0, 241);
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
