@@ -1,18 +1,21 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title>Ubicación</title>
-        <link rel="stylesheet" type="text/css" href="Ejercicio11.css" />
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="Ejercicio11.js"></script>
-    </head>
-    <body>
+<head> 
+    <meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0">
+    <title>Maps JavaScript API</title>
+    <link rel="stylesheet" type="text/css" href="Ejercicio11.css" /> 
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCKiIqCdZGrVxx06LSbe7uG3zXOq1Cz5k&callback=initMap" async defer></script>
+    <script src="Ejercicio11.js"></script>
+</head>  
+	<body>
         <h1>Ubicación</h1>
         <section id = "display">
-            <h2>Información sobre la ubicación actual</h2>
-            <button id = "verInfo" onclick= "miMapa.verTodo(&#39;display&#39;)">Ver ubicación</button>
-            <button type="verMapaEstatico" value="Obtener mapa estático" onclick="miMapa.getMapaEstaticoGoogle(&#39;display&#39;);">Obtener mapa estático</button>
-        </section>
-    </body>
+           <h2>Información sobre la ubicación actual</h2>
+           <button id = "verInfo" onclick= "miMapa.verTodo(&#39;display&#39;)">Ver ubicación</button>
+           <button id = "verMapaEstatico" onclick="miMapa.getMapaEstaticoGoogle(&#39;display&#39;);">Obtener mapa</button>
+        </section>  
+            <div id ="map"> </div> 
+	        
+	</body> 
 </html>

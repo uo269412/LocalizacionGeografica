@@ -4,7 +4,7 @@ class MapaEstaticoGoogle {
         navigator.geolocation.getCurrentPosition(this.getPosicion.bind(this), this.verErrores.bind(this));
     }
     getPosicion(posicion){
-        this.mensaje = "Se ha realizado correctamente la peticiÃ³n de geolocalización";
+        this.mensaje = "Se ha realizado correctamente la petición de geolocalización";
         this.longitud         = posicion.coords.longitude; 
         this.latitud          = posicion.coords.latitude;  
         this.precision        = posicion.coords.accuracy;
@@ -16,7 +16,7 @@ class MapaEstaticoGoogle {
     verErrores(error){
         switch(error.code) {
         case error.PERMISSION_DENIED:
-            this.mensaje = "El usuario no permite la petición de geolocalizaciÃ³n"
+            this.mensaje = "El usuario no permite la petición de geolocalización"
             break;
         case error.POSITION_UNAVAILABLE:
             this.mensaje = "Información de geolocalización no disponible"
@@ -52,7 +52,6 @@ class MapaEstaticoGoogle {
     }
     getMapaEstaticoGoogle(dondeVerlo){
         var ubicacion=document.getElementById(dondeVerlo);
-        
         var apiKey = "&key=AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU";
         //URL: obligatoriamente https
         var url = "https://maps.googleapis.com/maps/api/staticmap?";
@@ -80,4 +79,17 @@ class MapaEstaticoGoogle {
         ubicacion.innerHTML = "<img src='"+this.imagenMapa+"'/>";
     }
 }
-var miMapa = new MapaEstaticoGoogle();
+var miMapa = new MapaEstaticoGoogle();  
+var map;
+      function initMap() {
+       map = new google.maps.Map(document.getElementById('map'), {
+         center: {lat: 43.358056, lng: -5.860833},
+         zoom: 13,
+       });
+       var marker = new google.maps.Marker({
+         position: {lat: 43.358056, lng: -5.860833},
+         map: map,
+     title: 'Palacio de Congresos de Oviedo'
+       });
+     }
+

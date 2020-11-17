@@ -14,7 +14,7 @@ h1 {
 }
 /*001*/
 h2 {
-    color:rgb(35, 11, 122);
+    color:rgb(17, 2, 68);
     font-size: 2em;
     text-transform: uppercase;
 }
@@ -38,3 +38,15 @@ button {
 	font-size: 1em;
 	color: rgb(255, 255, 255);
 }
+div {
+    height: 100%;
+  }
+  #map {
+    height: 50%;
+  }
+ 
+  html, body {
+    height: 100%;
+    margin: 20;
+    padding: 0;
+  }
