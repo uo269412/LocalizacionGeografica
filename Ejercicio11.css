@@ -1,4 +1,8 @@
 /*001*/
+html, body {
+    height: 100%;
+}
+/*001*/
 body {
     font-family: "Optima", sans-serif;
     padding:1em;
@@ -38,15 +42,6 @@ button {
 	font-size: 1em;
 	color: rgb(255, 255, 255);
 }
-div {
-    height: 100%;
-  }
-  #map {
+#map {
     height: 50%;
-  }
- 
-  html, body {
-    height: 100%;
-    margin: 20;
-    padding: 0;
-  }
+}
